@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            background-color: red;
+        }
+
+        #cart {
+            background-color: white;
+            padding: 5px;
+            border: 1px solid gainsboro;
+        }
+
+        #cart i {
+            font-size: 25px;
+            color: rgb(255, 0, 0);
+        }
+
+        #itemcount {
+            font-size: 20px;
+        }
+
+        #product_box {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            column-gap: 20px;
+            row-gap: 20px;
+        }
+        .product_box{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="cart">
+            <a href="cart.html">
+                <i class='fa fa-cart-plus'></i>
+                <span id="itemcount">0</span>
+            </a>
+        </div>
+    </header>
+    <div>
+        <div id="product_box">
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <!-- <script src="cart.js"></script> -->
+</body>
+
+</html>
